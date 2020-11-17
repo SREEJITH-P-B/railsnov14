@@ -1,0 +1,9 @@
+<h1>ADD</h1>
+<%= form_with model: @article,url:articles_path , local: true do  |form| %>
+<%= form.label :title %>
+<%= form.text_field :title %><br><br>
+<%= form.file_field :image %><br>
+<%= form.label :body, 'Content'%>
+<%= form.text_area :body %>
+ <%= form.submit %>
+ <% end %>
